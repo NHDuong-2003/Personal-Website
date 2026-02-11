@@ -1,14 +1,41 @@
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+    const [activeNav, setActiveNav] = useState('#home');
+
+    const navItems = [
+        { name: 'Home', href: '#home' },
+        { name: 'About', href: '#about' },
+        { name: 'Projects', href: '#projects' },
+        { name: 'Services', href: '#services' },
+        { name: 'Contact', href: '#contact' },
+    ];
+
+    const handleNavClick = (href) => {
+        setActiveNav(href);
+        const element = document.querySelector(href);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <nav className="navbar">
             <div className="nav-links">
-                <a href="#home" className="nav-item active">Home</a>
-                <a href="#about" className="nav-item">About</a>
-                <a href="#projects" className="nav-item">Projects</a>
-                <a href="#service" className="nav-item">Service</a>
-                <a href="#contact" className="nav-item">Contact</a>
+                {navItems.map((item) => (
+                    <a
+                        key={item.name}
+                        href={item.href}
+                        className={`nav-item ${activeNav === item.href ? 'active' : ''}`}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            handleNavClick(item.href);
+                        }}
+                    >
+                        {item.name}
+                    </a>
+                ))}
             </div>
         </nav>
     );
