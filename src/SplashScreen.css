@@ -1,0 +1,137 @@
+/* 
+  SPLASH SCREEN STYLES 
+*/
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: transform 0.8s ease-in-out;
+    color: #ffffff;
+}
+
+/* The class that triggers the slide up */
+.splash-screen.slide-up {
+    transform: translateY(-100%);
+}
+
+/* Laptop Icon Container */
+.splash-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.splash-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #ffffff;
+    filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.5));
+}
+
+/* "MY PROFILE" Text */
+.splash-title {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Social Icons Row */
+.splash-socials {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    /* White icons */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Footer "Designed by..." */
+.splash-footer {
+    position: absolute;
+    bottom: 30px;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+/* "MY PROFILE" Text with Typewriter Animation */
+.splash-title {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    /* Layout & Spacing */
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Typewriter Effect Setup */
+    width: 0;
+    /* Start invisible */
+    white-space: nowrap;
+    /* Keep on one line */
+    overflow: hidden;
+    /* Hide text as it types */
+    border-right: 3px solid #ffffff;
+    /* The "Cursor" */
+
+    /* Run the animation */
+    /* typing: 1.0s duration, 11 steps (length of text), 0.1s delay */
+    animation:
+        typing 1.0s steps(11, end) 0.1s forwards,
+        blink-caret 0.75s step-end infinite;
+}
+
+/* --- ANIMATION KEYFRAMES --- */
+
+/* The typing effect: width goes from 0 to 11 characters */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 11ch;
+    }
+
+    /* "MY PROFILE" is 10 chars + 1 for buffer */
+}
+
+/* The blinking cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #ffffff;
+    }
+}

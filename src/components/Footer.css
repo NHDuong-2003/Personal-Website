@@ -1,0 +1,38 @@
+.main-footer {
+    background: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-nav a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}
+
+.footer-socials {
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.copyright {
+    color: #555;
+    font-size: 0.85rem;
+}

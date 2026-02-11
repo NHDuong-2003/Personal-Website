@@ -1,0 +1,274 @@
+/* Hero.css */
+
+.hero-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* --- Top Section Styles --- */
+.hero-top {
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+.availability-badge {
+    display: inline-block;
+    background-color: #f9f9f9;
+    color: #555;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: 1px solid #eee;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.1;
+    color: #111;
+}
+
+.hero-subtitle {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 0 0 1.5rem 0;
+    color: #333;
+}
+
+.typing-text {
+    border-right: 3px solid #333;
+    padding-right: 5px;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #333;
+    }
+}
+
+.hero-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+.info-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    color: #444;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-socials {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.social-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.social-icon-link:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateY(-3px);
+    border-color: #000;
+}
+
+.social-icon-link svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.hero-divider {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+/* --- Bottom Section (2 Columns) --- */
+.hero-bottom {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    /* Text takes slightly more space than image */
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Bottom Left: Text Content */
+.bottom-text h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #111;
+}
+
+.section-desc {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+/* What Drives Me Cards */
+.drives-container {
+    margin-top: 2rem;
+}
+
+.drives-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.drives-grid {
+    display: flex;
+    flex-direction: column;
+    /* Stacked vertically as per common design, or row if preferred */
+    gap: 1rem;
+}
+
+/* Make drives-grid horizontal on larger screens as per previous design */
+@media (min-width: 600px) {
+    .drives-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.drive-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    flex: 1;
+    min-width: 160px;
+}
+
+.drive-icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: #333;
+}
+
+.drive-text h4 {
+    margin: 0 0 2px 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.drive-text span {
+    font-size: 0.75rem;
+    color: #777;
+    display: block;
+}
+
+/* Bottom Right: Image Card */
+.bottom-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-card {
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 0;
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border: 1px solid #eee;
+    position: relative;
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-card:hover .profile-img {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .hero-bottom {
+        grid-template-columns: 1fr;
+        /* Stack vertically on tablet/mobile */
+        gap: 3rem;
+    }
+
+    .bottom-image {
+        order: -1;
+        /* Move image to top on mobile if desired, or remove this line to keep at bottom */
+        justify-content: flex-start;
+    }
+
+    .image-card {
+        max-width: 100%;
+        aspect-ratio: 16/9;
+        /* Wider on mobile */
+    }
+
+    .hero-top {
+        text-align: left;
+        /* Keep left aligned or change to center */
+    }
+}
