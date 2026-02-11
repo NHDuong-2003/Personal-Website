@@ -4,7 +4,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* Force Light Mode variables for this design */
   color: #1a1a1a;
   background-color: #ffffff;
 
@@ -18,12 +17,10 @@ body {
   margin: 0;
   padding: 0;
   display: block;
-  /* Changed from flex/place-items: center to allow normal scrolling */
   min-width: 320px;
   min-height: 100vh;
 }
 
-/* Reset default button styles */
 button {
   font-family: inherit;
   cursor: pointer;
