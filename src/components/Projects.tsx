@@ -2,57 +2,63 @@ import { useState } from 'react';
 import './Projects.css';
 
 const Projects = () => {
-    // State to manage the currently open project (null means no modal open)
     const [selectedProject, setSelectedProject] = useState(null);
 
     const projectsData = [
         {
             id: 1,
-            title: "Data Source Management",
-            desc: "A comprehensive system to manage various data streams efficiently, allowing for real-time monitoring and configuration of input sources.",
-            tags: ["React", "Node.js"],
-            img: "https://via.placeholder.com/400x200", // Added placeholder for visual test
+            title: "Data Management for Chatbot",
+            desc: "",
+            tags: ["Python", "PostgreSQL"],
+            img: "https://via.placeholder.com/400x200",
         },
         {
             id: 2,
-            title: "User Interface for Data Source Management",
-            desc: "An intuitive UI designed to simplify the complexity of managing data sources, featuring drag-and-drop capabilities and visual dashboards.",
-            tags: ["HTML", "CSS", "JavaScript"],
+            title: "User Interface for Data Management",
+            desc: "",
+            tags: ["HTML", "CSS", "TypeScript", "Node.js", "React"],
             img: "https://via.placeholder.com/400x200",
         },
         {
             id: 3,
-            title: "Extract Business Report from multiple companies",
-            desc: "Automated extraction tool that parses reports from various corporate APIs and consolidates them into a unified format for analysis.",
-            tags: ["Vue", "API", "CSS"],
+            title: "Business Report Extractor",
+            desc: "",
+            tags: ["Python", "PostgreSQL"],
             img: "https://via.placeholder.com/400x200",
         },
         {
             id: 4,
-            title: "MCP Server",
-            desc: "A high-performance server implementation handling Model Context Protocol requests with integrated payment processing via Stripe.",
-            tags: ["React", "Stripe", "Tailwind"],
+            title: "User Interface for Business Report Extractor",
+            desc: "",
+            tags: ["HTML", "CSS", "JavaScript", "Node.js", "React"],
             img: "https://via.placeholder.com/400x200",
         },
         {
             id: 5,
-            title: "Schema generate output control / Background comparision",
-            desc: "Logic to generate dynamic database schemas based on output requirements, running background comparisons to ensure data integrity.",
-            tags: ["HTML", "CSS", "JavaScript"],
+            title: "MCP Server",
+            desc: "",
+            tags: ["Python"],
             img: "https://via.placeholder.com/400x200",
         },
         {
             id: 6,
-            title: "Predict fear and greed index for VNINDEX",
-            desc: "Machine learning model designed to analyze market sentiment and predict the Fear and Greed index specifically for the Vietnam Index.",
-            tags: ["Vue", "API", "CSS"],
+            title: "Schema generate output control / Background comparision",
+            desc: "",
+            tags: ["Python"],
             img: "https://via.placeholder.com/400x200",
         },
         {
             id: 7,
-            title: "Backend for financial management",
-            desc: "Robust backend architecture supporting secure transactions, ledger management, and financial reporting services.",
-            tags: ["Node.js", "Express", "PostgreSQL"],
+            title: "Predict fear and greed index for VNINDEX",
+            desc: "",
+            tags: ["Python", "PostgreSQL"],
+            img: "https://via.placeholder.com/400x200",
+        },
+        {
+            id: 8,
+            title: "Backend & Frontend for financial management",
+            desc: "",
+            tags: ["CSS", "HTML", "Javascript", "Python", "PostgreSQL"],
             img: "https://via.placeholder.com/400x200",
         }
     ];
