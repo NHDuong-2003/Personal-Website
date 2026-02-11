@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Hero.css';
-import heroImage from '../assets/_.jpeg';
+import heroImage from '../assets/IMG_3550.PNG';
 
 const Hero = () => {
     // Typing Animation State

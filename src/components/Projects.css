@@ -63,8 +63,9 @@
 }
 
 .tag {
-    background: #eff6ff;
-    color: #000000;
+    background: #f0f0f0;
+    color: #787B83;
+    border: 1px solid #DEE0E2;
     padding: 0.2rem 0.6rem;
     border-radius: 6px;
     font-size: 0.75rem;
@@ -91,11 +92,15 @@
 }
 
 .btn-blue {
-    background: #4f46e5;
+    background: linear-gradient(135deg, #B6BEC5, #787B83);
     color: #fff;
+    border: none;
 }
 
-/* --- NEW MODAL STYLES --- */
+.btn-blue:hover {
+    filter: brightness(0.9);
+}
+
 
 .modal-overlay {
     position: fixed;

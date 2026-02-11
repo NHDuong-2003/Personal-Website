@@ -15,14 +15,14 @@
 
 .availability-badge {
     display: inline-block;
-    background-color: #f9f9f9;
-    color: #555;
+    background-color: #fff;
+    color: #787B83;
     padding: 0.5rem 1rem;
     border-radius: 30px;
     font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    border: 1px solid #eee;
+    border: 1px solid #B6BEC5;
 }
 
 .hero-title {
@@ -31,6 +31,9 @@
     margin: 0 0 0.5rem 0;
     line-height: 1.1;
     color: #111;
+    background: linear-gradient(to bottom, #1a1a1a 40%, #787B83 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
@@ -186,10 +189,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    border: 1px solid #eee;
+    border: 1px solid #DEE0E2;
+    background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
     padding: 1rem;
     border-radius: 12px;
-    background: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     flex: 1;
     min-width: 160px;
@@ -198,7 +201,7 @@
 .drive-icon svg {
     width: 28px;
     height: 28px;
-    stroke: #333;
+    stroke: #787B83;
 }
 
 .drive-text h4 {
@@ -222,13 +225,15 @@
 
 .image-card {
     background-color: #000000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #DEE0E2, #B6BEC5, #787B83);
     border-radius: 20px;
     padding: 0;
     width: 100%;
     max-width: 450px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    border: 1px solid #eee;
+    border: 1px solid #DEE0E2;
     position: relative;
     display: flex;
     align-items: flex;

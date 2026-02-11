@@ -33,9 +33,9 @@
 }
 
 .nav-item.active {
-    background-color: #000;
-    color: #fff;
+    background: linear-gradient(135deg, #DEE0E2, #B6BEC5);
+    color: #1a1a1a;
+    border: 1px solid #787B83;
     padding: 0.4rem 1.2rem;
     border-radius: 20px;
-    margin: -0.4rem 0;
 }

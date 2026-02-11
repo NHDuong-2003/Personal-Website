@@ -2,6 +2,8 @@
 
 /* --- GLOBAL LAYOUT --- */
 #root {
+  --luxury-gradient: linear-gradient(135deg, #DEE0E2 0%, #B6BEC5 50%, #787B83 100%);
+  --luxury-text-gradient: linear-gradient(to right, #787B83, #B6BEC5, #787B83);
   width: 100%;
   margin: 0 auto;
   text-align: left;
@@ -37,6 +39,10 @@
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
+  background: var(--luxury-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .section-subtitle {
@@ -60,13 +66,20 @@
 }
 
 .btn-primary {
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #000;
+  background: var(--luxury-gradient);
+  color: #1a1a1a;
+  border: 1px solid #787B83;
+  box-shadow: 0 4px 15px rgba(120, 123, 131, 0.2);
 }
 
 .btn-secondary {
   background-color: transparent;
   color: #000;
   border: 2px solid #e0e0e0;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(120, 123, 131, 0.3);
 }
